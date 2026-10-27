@@ -13,14 +13,14 @@ Built against **Godot 4.7.2** (18 Aug 2026 patch release) and works with the **.
 
 ## What you get
 
-| | |
-|---|---|
-| **MCP servers (5, 109 tools)** | `godot` (project/scene/script/run/test/export + live editor), `blender` (headless + live bridge), `comfyui`, `assets` (Pillow pixel-art + audio), `gimp` |
-| **Agents (12)** | game-director, gdscript-engineer, csharp-engineer, scene-architect, technical-artist-2d, blender-3d-artist, comfyui-operator, audio-designer, qa-playtester, game-designer, build-release-engineer, shader-vfx-artist |
-| **Skills (19)** | project setup, GDScript style, scenes/nodes, 2D platformer, 3D, UI/themes, shaders/VFX, physics/nav/AI, multiplayer, export/release, C#, Blender→Godot, ComfyUI art, pixel-art pipeline, audio, testing/debugging, GDD, save/load, editor bridge |
-| **Commands (10)** | `/new-game` `/add-feature` `/make-sprite` `/make-3d-asset` `/playtest` `/export-game` `/studio-doctor` `/game-jam` `/art-pass` `/audio-pass` |
-| **Hooks** | PostToolUse lint/validation of `.gd`/`.tscn`/`.tres` (errors go straight back to Claude); SessionStart status |
-| **Templates** | 21 GDScript, 3 C#, 10 shaders, a GUT test — added with `godot_add_template` |
+|                                |                                                                                                                                                                                                                                                  |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **MCP servers (5, 109 tools)** | `godot` (project/scene/script/run/test/export + live editor), `blender` (headless + live bridge), `comfyui`, `assets` (Pillow pixel-art + audio), `gimp`                                                                                         |
+| **Agents (12)**                | game-director, gdscript-engineer, csharp-engineer, scene-architect, technical-artist-2d, blender-3d-artist, comfyui-operator, audio-designer, qa-playtester, game-designer, build-release-engineer, shader-vfx-artist                            |
+| **Skills (19)**                | project setup, GDScript style, scenes/nodes, 2D platformer, 3D, UI/themes, shaders/VFX, physics/nav/AI, multiplayer, export/release, C#, Blender→Godot, ComfyUI art, pixel-art pipeline, audio, testing/debugging, GDD, save/load, editor bridge |
+| **Commands (10)**              | `/new-game` `/add-feature` `/make-sprite` `/make-3d-asset` `/playtest` `/export-game` `/studio-doctor` `/game-jam` `/art-pass` `/audio-pass`                                                                                                     |
+| **Hooks**                      | PostToolUse lint/validation of `.gd`/`.tscn`/`.tres` (errors go straight back to Claude); SessionStart status                                                                                                                                    |
+| **Templates**                  | 21 GDScript, 3 C#, 10 shaders, a GUT test — added with `godot_add_template`                                                                                                                                                                      |
 
 ## Install
 
@@ -37,22 +37,22 @@ Built against **Godot 4.7.2** (18 Aug 2026 patch release) and works with the **.
 
 ## Configure (environment variables, all optional)
 
-| Variable | Purpose |
-|---|---|
-| `GODOT_PATH` | Godot executable. Auto-detected on PATH and common install dirs. Windows: prefer `Godot_v4.7.2-stable_win64_console.exe` so output is captured |
-| `BLENDER_PATH` | `blender.exe` / `blender` |
-| `COMFYUI_URL` | default `http://127.0.0.1:8188` |
-| `COMFY_WORKFLOWS_DIR` | folder with API-format workflow JSON files |
-| `GIMP_PATH` | `gimp-console-3.0.exe` / `gimp-console-2.10.exe` |
-| `FFMPEG_PATH` | for audio conversion |
-| `GAME_PROJECT_DIR` | default project; otherwise the current directory (searched upward for `project.godot`) |
-| `GODOT_EDITOR_PORT` / `BLENDER_BRIDGE_PORT` | bridge ports (9877 / 9876) |
-| `GODOT_EDITOR_TOKEN` / `BLENDER_BRIDGE_TOKEN` | shared secret required by the bridges |
-| `GODOT_EDITOR_ALLOW_EXECUTE=0` | disables the editor bridge `execute` command (arbitrary GDScript; **on** by default — it is what makes full editor control possible) |
+| Variable                                      | Purpose                                                                                                                                        |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| `GODOT_PATH`                                  | Godot executable. Auto-detected on PATH and common install dirs. Windows: prefer `Godot_v4.7.2-stable_win64_console.exe` so output is captured |
+| `BLENDER_PATH`                                | `blender.exe` / `blender`                                                                                                                      |
+| `COMFYUI_URL`                                 | default `http://127.0.0.1:8188`                                                                                                                |
+| `COMFY_WORKFLOWS_DIR`                         | folder with API-format workflow JSON files                                                                                                     |
+| `GIMP_PATH`                                   | `gimp-console-3.0.exe` / `gimp-console-2.10.exe`                                                                                               |
+| `FFMPEG_PATH`                                 | for audio conversion                                                                                                                           |
+| `GAME_PROJECT_DIR`                            | default project; otherwise the current directory (searched upward for `project.godot`)                                                         |
+| `GODOT_EDITOR_PORT` / `BLENDER_BRIDGE_PORT`   | bridge ports (9877 / 9876)                                                                                                                     |
+| `GODOT_EDITOR_TOKEN` / `BLENDER_BRIDGE_TOKEN` | shared secret required by the bridges                                                                                                          |
+| `GODOT_EDITOR_ALLOW_EXECUTE=0`                | disables the editor bridge `execute` command (arbitrary GDScript; **on** by default — it is what makes full editor control possible)           |
 
 ## Godot 4.7.2 notes
 
-- **.NET:** use the "Godot .NET" editor build *and* the .NET SDK (8+; 9+ for Android). C# projects can't export to Web; Android/iOS export is experimental. Steam/itch/Epic Godot builds have no .NET. Godot 4.8 (beta) will need .NET 10; .NET 8/9 go out of support 10 Nov 2026.
+- **.NET:** use the "Godot .NET" editor build _and_ the .NET SDK (8+; 9+ for Android). C# projects can't export to Web; Android/iOS export is experimental. Steam/itch/Epic Godot builds have no .NET. Godot 4.8 (beta) will need .NET 10; .NET 8/9 go out of support 10 Nov 2026.
 - Export templates must match the editor version exactly.
 
 ## Typical sessions

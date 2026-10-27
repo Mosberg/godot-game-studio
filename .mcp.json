@@ -2,9 +2,7 @@
   "mcpServers": {
     "godot": {
       "command": "python",
-      "args": [
-        "${CLAUDE_PLUGIN_ROOT}/mcp/godot_server.py"
-      ],
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/godot_server.py"],
       "env": {
         "GODOT_PATH": "${GODOT_PATH:-}",
         "GODOT_EDITOR_PORT": "${GODOT_EDITOR_PORT:-9877}",
@@ -14,9 +12,7 @@
     },
     "blender": {
       "command": "python",
-      "args": [
-        "${CLAUDE_PLUGIN_ROOT}/mcp/blender_server.py"
-      ],
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/blender_server.py"],
       "env": {
         "BLENDER_PATH": "${BLENDER_PATH:-}",
         "BLENDER_BRIDGE_PORT": "${BLENDER_BRIDGE_PORT:-9876}",
@@ -25,9 +21,7 @@
     },
     "comfyui": {
       "command": "python",
-      "args": [
-        "${CLAUDE_PLUGIN_ROOT}/mcp/comfyui_server.py"
-      ],
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/comfyui_server.py"],
       "env": {
         "COMFYUI_URL": "${COMFYUI_URL:-http://127.0.0.1:8188}",
         "COMFY_WORKFLOWS_DIR": "${COMFY_WORKFLOWS_DIR:-}"
@@ -35,18 +29,14 @@
     },
     "assets": {
       "command": "python",
-      "args": [
-        "${CLAUDE_PLUGIN_ROOT}/mcp/assets_server.py"
-      ],
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/assets_server.py"],
       "env": {
         "FFMPEG_PATH": "${FFMPEG_PATH:-}"
       }
     },
     "gimp": {
       "command": "python",
-      "args": [
-        "${CLAUDE_PLUGIN_ROOT}/mcp/gimp_server.py"
-      ],
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/gimp_server.py"],
       "env": {
         "GIMP_PATH": "${GIMP_PATH:-}"
       }
