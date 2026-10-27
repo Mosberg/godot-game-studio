@@ -1,0 +1,6 @@
+mcp>=1.2.0
+Pillow>=10.0.0
+numpy>=1.24
+# optional but recommended
+gdtoolkit>=4.0      # gdlint / gdformat for GDScript 4
+rembg>=2.0.50       # AI background removal (optional, large download)

@@ -1,0 +1,21 @@
+{
+  "name": "godot-game-studio",
+  "version": "1.0.0",
+  "description": "AI game studio for Godot 4.x: full project/scene/script control, a live Godot editor bridge, Blender (headless + live), ComfyUI image generation, GIMP/Pillow asset pipeline, procedural audio, 12 specialist agents, 17 skills, slash commands and validation hooks.",
+  "author": {
+    "name": "Rasmus Mosberg"
+  },
+  "license": "MIT",
+  "keywords": [
+    "godot",
+    "gdscript",
+    "csharp",
+    "game-development",
+    "blender",
+    "comfyui",
+    "gimp",
+    "pixel-art",
+    "mcp",
+    "automation"
+  ]
+}

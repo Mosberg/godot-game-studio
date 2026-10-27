@@ -1,0 +1,16 @@
+{
+  "name": "godot-game-studio-marketplace",
+  "owner": {
+    "name": "Rasmus Mosberg"
+  },
+  "plugins": [
+    {
+      "name": "godot-game-studio",
+      "source": "./",
+      "description": "AI game studio for Godot 4.x with Godot, Blender, ComfyUI, GIMP and audio automation.",
+      "version": "1.0.0",
+      "category": "development",
+      "keywords": ["godot", "blender", "comfyui", "gimp", "game-development"]
+    }
+  ]
+}
